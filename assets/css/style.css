@@ -1,0 +1,176 @@
+* {
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-image: url("../images/dark-honeycomb.png");
+    border: none;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+header {
+    background-color: lightgray;
+    display: block;
+    z-index: 1;
+    box-shadow: 0px 5px 5px black;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+    /* display: block;
+    position: relative; */
+}
+
+.title {
+    float: left;
+    z-index: 2;
+    background-color: #4caf50;
+    padding: 2px 0 0 0;
+    height: 60px;
+    color: white;
+    box-shadow: 0px 0px 5px black;
+}
+
+.title h1 {
+    margin: 10px;
+}
+
+/* Style of navigation buttons */
+.navButtons {
+    margin: 0;
+    list-style-type: none;
+    float: right;
+    display: inline;
+}
+
+.navButtons li {
+    /* float: right; */
+    display: inline;
+    margin-top: 22px;
+    background-color: lightgray;
+}
+
+.navButtons a {
+    margin: 0 5px 0 5px;
+    color: black;
+    text-decoration: none;
+    padding: 22px 10px 21px 10px;
+}
+
+.navButtons a.active {
+    background-color: #4caf50;
+    color: white;
+    box-shadow: 0 0 5px black;
+}
+
+.navButtons a:hover:not(.active) {
+    background-color: darkgray;
+}
+
+.navButtons li:not(:first-child)::after {
+    display: inline;
+    content: "|";
+    color: darkgray;
+}
+
+/* Style of main content */
+.body {
+    width: 960px;
+    margin: auto;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 8px;
+    clear: both;
+}
+
+.body h2 {
+    background-color: lightgray;
+    padding: 20px;
+    margin: 0;
+    display: block;
+}
+
+.body img {
+    float: left;
+    margin: 10px;
+    height: 200px;
+    width: auto;
+}
+
+.body p {
+    margin-left: 20px;
+}
+
+#am {
+    float: left;
+    width: 720px;
+}
+
+.links {
+    float: left;
+    width: 220px;
+    margin: 10px;
+    box-shadow: 0 0 5px black;
+}
+
+.links ul {
+    list-style-type: none;
+    display: block;
+    margin: 0;
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+
+.links li {
+    height: 40px;
+    margin: 0;
+}
+
+.links img {
+    margin: 0;
+    height: 40px;
+    width: auto;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover {
+    text-shadow: 0 0 2px #4caf50, 0 0 1px white;
+}
+
+.links p {
+    padding: 12px;
+}
+
+#ea {
+    margin-left: 40px;
+    width: 25%;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: lightgray;
+    position: fixed;
+    bottom: 0;
+}
+
+footer div {
+    background-color: #4caf50;
+    height: 10px;
+}
+
+footer p {
+    padding: 8px
+}
